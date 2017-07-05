@@ -74,7 +74,7 @@
                                     <li><a href="index6.html">Home Option 6</a></li>
                                 </ul>
                             </li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="about.jsp">About</a></li>
                             <li><a href="single.html">Blog Single 1</a></li>
                             <li><a href="single2.html">Blog Single 2</a></li>
                         </ul>
@@ -353,7 +353,7 @@
                 <div class="row">
                     <ul class="nav column-menu white-bg">
                         <li class="active"><a href="index.jsp">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="about.jsp">About</a></li>
                         <li><a href="single.html">Blog Single 1</a></li>
                         <li><a href="single2.html">Blog Single 2</a></li>
                     </ul>
