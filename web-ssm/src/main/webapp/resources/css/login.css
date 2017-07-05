@@ -1,0 +1,24 @@
+/*
+所有的样式
+H5
+ 王雪
+*/
+body{padding: 0;margin: 0 auto;font-family: "微软雅黑";}
+.box{width: 100%;height: 100%;position: fixed;margin: 0 auto;}
+.home_logo{width: 742px;height: 742px;position: fixed;margin-top: -371px;left: 0%;top: 50%;}
+.home_logo>img{width: 185%;height: 100%;}
+.login-box {border-radius:10px;width:370px;max-height: 400px;margin-left:-185px;margin-top: -200px;position: absolute;top: 50%;right:9%;overflow: hidden;border: 1px solid #00AFF0;}
+.login-title {height: 40px;border: 1px solid #00AFF0;overflow: hidden;border-radius: 8px 8px 0px 0px;margin-bottom:40px;}
+.login-title>h1{font-size: 16px;color:white;padding: 0px;margin: 0;font-weight: normal;line-height: 40px;padding-left:40px;}
+.login-icon{background-color: white;border-radius: 0px;color: #C2C2C2;font-size: 15px;}
+.login-input{border-left: none;border-radius: 0px;}
+.login-yzm{display: inline-block;width: 104px;}
+.code{background:url(../img/bg-yzb.png) no-repeat;font-family: Arial;font-style: italic;color: #262626;font-size: 20px;border: 1px solid #ddd;border-radius: 2px;
+      letter-spacing: 3px;font-weight: bolder;float: right;width: 100px;cursor: pointer;height: 34px;line-height: 30px;
+      text-align: center;vertical-align: middle;z-index: 1;background-size: 100%;}
+.log-on{padding: 2px;height: 30px;border-radius: 0px;width: 40%;float: left;}
+.log-empty{padding: 2px;height: 30px; background-color: #E86E23;color: #FFFFFF;border-radius: 0px;width:40%;float: right;}
+.log-on:hover, .log-empty:hover{color: white;opacity: 0.7;}
+.distance{padding: 10px 40px 30px 40px;}
+.login_b{ overflow: auto;text-align: left;padding: 0px 40px 10px;}
+.login_b>a{font-size: x-small;color: white;padding: 0px 5px;}
