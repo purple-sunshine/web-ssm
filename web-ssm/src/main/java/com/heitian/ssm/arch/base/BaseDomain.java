@@ -10,7 +10,6 @@ import java.util.Date;
  * 所有领域模型的基类
  * Created by walden on 2016/11/2.
  */
-@NoRepositoryBean
 @Data
 public class BaseDomain implements Serializable {
     /**
@@ -37,10 +36,6 @@ public class BaseDomain implements Serializable {
     /**
      * false 有效 true 已删除
      */
-    private boolean deleted;
+    private Integer status;
 
-    /**
-     * 0 未同步 1 已同步
-     */
-    private Integer syscStatus=new Integer(0);
 }

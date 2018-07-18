@@ -34,7 +34,7 @@ public class LoginHandler {
 
 
     @RequestMapping("/forwardLogin")
-    public String loginPage() {
+    public String loginPage( ) {
         return "/login";
     }
 

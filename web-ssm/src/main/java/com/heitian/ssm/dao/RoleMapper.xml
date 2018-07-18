@@ -9,7 +9,7 @@
         <result column="create_time" property="createTime"/>
         <result column="update_by" property="updateBy"/>
         <result column="update_time" property="updateTime"/>
-        <result column="sysc_status" property="syscStatus"/>
+        <result column="status" property="status"/>
     </resultMap>
     <insert id="insert" useGeneratedKeys="true" keyProperty="pojo.id">
         INSERT INTO role (
@@ -20,7 +20,7 @@
             `create_time`,
             `update_by`,
             `update_time`,
-            `sysc_status`
+            `status`
         ) VALUES (
             #{pojo.code},
             #{pojo.name},
@@ -29,7 +29,7 @@
             #{pojo.createTime},
             #{pojo.updateBy},
             #{pojo.updateTime},
-            #{pojo.syscStatus}
+            #{pojo.status}
         )
     </insert>
 
@@ -44,7 +44,7 @@
             <if test="pojo.createTime!=null"> `create_time`,</if>
             <if test="pojo.updateBy!=null"> `update_by`,</if>
             <if test="pojo.updateTime!=null"> `update_time`,</if>
-            <if test="pojo.syscStatus!=null"> `sysc_status`,</if>
+            <if test="pojo.status!=null"> `status`,</if>
         </trim>
         VALUES
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -55,7 +55,7 @@
             <if test="pojo.createTime!=null">#{pojo.createTime},</if>
             <if test="pojo.updateBy!=null">#{pojo.updateBy},</if>
             <if test="pojo.updateTime!=null">#{pojo.updateTime},</if>
-            <if test="pojo.syscStatus!=null">#{pojo.syscStatus},</if>
+            <if test="pojo.status!=null">#{pojo.status},</if>
         </trim>
     </insert>
 
@@ -73,7 +73,7 @@
             #{pojo.createTime},
             #{pojo.updateBy},
             #{pojo.updateTime},
-            #{pojo.syscStatus}
+            #{pojo.status}
             )
         </foreach>
     </insert>
@@ -89,7 +89,7 @@
             <if test="pojo.createTime != null"> `create_time` = #{pojo.createTime}, </if>
             <if test="pojo.updateBy != null"> `update_by` = #{pojo.updateBy}, </if>
             <if test="pojo.updateTime != null"> `update_time` = #{pojo.updateTime}, </if>
-            <if test="pojo.syscStatus != null"> `sysc_status` = #{pojo.syscStatus} </if>
+            <if test="pojo.status != null"> `status` = #{pojo.status} </if>
         </set>
         WHERE id = #{pojo.id}
     </update>
